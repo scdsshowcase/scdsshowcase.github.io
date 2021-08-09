@@ -28,7 +28,7 @@ Project information:
     <b>Keywords:</b> {{teami.Keywords }}<br>
     <b> YouTube video: </b><a href="{{ teami.Video }}">YouTube link</a><br>
       <!-- Youtube link embedding: assume that last 11 chars are the video id and use that to create an embed link -->
-      {% assign vlink = {{ teami.Video }} | | slice: 16, 11%}
+      {% assign vlink = teami.Video | | slice: 16, 11%}
      <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ vlink }}"  frameborder="0" allowfullscreen></iframe><br>
     <b>Abstract:</b> {{teami.Abstract }}<br>  
     <b> Poster: </b><a href="{{ teami.PosterLink }}">Download poster</a><br>
