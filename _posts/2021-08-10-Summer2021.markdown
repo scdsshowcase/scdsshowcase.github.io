@@ -36,10 +36,10 @@ Project information:
       {{ Download poster }}</a><br>
       <!-- G Drive embedding link embedding: assume that last 11 chars are the poster id and use that to create an embed link -->
       <!-- docs: https://shopify.github.io/liquid/filters/remove/  <iframe src="https://drive.google.com/file/d/1EaLJKyy3YoeM4QXYlmelszWQW5vxq0Tu/preview" width="640" height="480" allow="autoplay"></iframe> -->
-      {% assign plink = teami.PosterLink  | | slice: 31, 33%}
-<!--      <iframe width="420" height="280" src="https://drive.google.com/file/d/{{ plink }}/preview"  frameborder="0" allowfullscreen></iframe><br> -->
+    <!--  {% assign plink = teami.PosterLink  | | slice: 31, 33%}
+      <iframe width="420" height="280" src="https://drive.google.com/file/d/{{ plink }}/preview"  frameborder="0" allowfullscreen></iframe><br> -->
   
-    </ul>
+   </ul>
 {% endfor %}
 
 
