@@ -44,6 +44,8 @@ remote_theme: jekyll/minima
 
 plugins:
   - jekyll-feed
+
+gems:
   - jekyll-remote-theme
 
 
