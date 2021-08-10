@@ -32,12 +32,13 @@ url: https://scdsshowcase.github.io  # the base hostname and protocol for your s
 twitter_username: wentworthinst
 github_username:  scdsshowcase
 
+minima:
+  skin: dark
+  
 # Build settings
 # ME: change theme
 theme: minima #default
 # theme: minimal-mistakes-jekyll
-minima:
-  skin: dark
 
 plugins:
   - jekyll-feed
