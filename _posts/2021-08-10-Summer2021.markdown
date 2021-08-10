@@ -26,15 +26,6 @@ Project information:
   <h2> Project: {{ teami.Title }}</h2>
     <b>Team Members:</b> {{teami.Members}}<br>
     <b>Keywords:</b> {{teami.Keywords }}<br>
-    <b> YouTube video: </b><a href="{{ teami.Video }}">YouTube link</a><br>
-      <!-- Youtube link embedding: 2 types of links; short or long. assume that last 11 chars are the video id and use that to create an embed link -->
-  {% if teami.Video  | slice: 19, 3 == "com" %} <!-- long link https://www.youtube.com/watch?v=5E2rEKQ4Rmg -->
-   {% assign vlink = teami.Video | | slice: 32, 11%}
-  {% else %} <!-- short link https://youtu.be/5OoDQ50bzUk -->
-     {% assign vlink = teami.Video | | slice: 17, 11%}
-{% endif %}
-  
-     <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ vlink }}"  frameborder="0" allowfullscreen></iframe><br>
     <b>Abstract:</b> {{teami.Abstract }}<br>  
       <!-- G Drive embedding link embedding: assume that last 11 chars are the poster id and use that to create an embed link -->
       <!-- docs: https://shopify.github.io/liquid/filters/remove/  <iframe src="https://drive.google.com/file/d/1EaLJKyy3YoeM4QXYlmelszWQW5vxq0Tu/preview" width="640" height="480" allow="autoplay"></iframe> -->
@@ -42,6 +33,15 @@ Project information:
       <iframe width="420" height="280" src="https://drive.google.com/file/d/{{ plink }}/preview"  frameborder="0" allowfullscreen></iframe><br> -->
    {% assign plink = teami.PosterLink  | | slice: 31, 33%}
   <b> Poster: </b><a href="https://drive.google.com/file/d/{{ plink }}/preview">Download poster</a><br>
+      <b> YouTube video: </b><a href="{{ teami.Video }}">YouTube link</a><br>
+      <!-- Youtube link embedding: 2 types of links; short or long. assume that last 11 chars are the video id and use that to create an embed link -->
+  {% if teami.Video  | slice: 19, 3 == "com" %} <!-- long link https://www.youtube.com/watch?v=5E2rEKQ4Rmg -->
+   {% assign vlink = teami.Video | | slice: 32, 11%}
+  {% else %} <!-- short link https://youtu.be/5OoDQ50bzUk 17,11-->
+     {% assign vlink = teami.Video | | slice: 11, 11%}
+{% endif %}
+       <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ vlink }}"  frameborder="0" allowfullscreen></iframe><br>
+
   
    </ul>
 {% endfor %}
