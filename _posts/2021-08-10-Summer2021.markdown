@@ -40,7 +40,7 @@ Project information:
     {% assign vlink = teami.Video | | slice: 32, 11%}
   {% else %} <!-- short link https://youtu.be/5OoDQ50bzUk 17,11-->
     short link
-    {% assign vlink = teami.Video | | slice: 11, 11%}
+    {% assign vlink = teami.Video | | slice: 17, 11%}
 {% endif %}
     {{ vlink }}
        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ vlink }}"  frameborder="0" allowfullscreen></iframe><br>
