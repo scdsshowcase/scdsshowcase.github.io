@@ -21,4 +21,6 @@ Website live at: https://scdsshowcase.github.io/
 All CAP fields to be changed accordingly. 
 Example here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-content-to-your-github-pages-site-using-jekyll
 
-And https://jekyllrb.com/docs/github-pages/
+### Edit: description, emails, social media:
+Modify _config.yml
+
