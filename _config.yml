@@ -37,11 +37,14 @@ minima:
   
 # Build settings
 # ME: change theme
-theme: minima #default
+# theme: minima #default
 # theme: minimal-mistakes-jekyll
+remote_theme: jekyll/minima 
+#benbalter/retlab
 
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 
 
