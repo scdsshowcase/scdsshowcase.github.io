@@ -35,7 +35,7 @@ Project information:
   <b> Poster: </b><a href="https://drive.google.com/file/d/{{ plink }}/preview">Download poster</a><br>
       <b> YouTube video: </b><a href="{{ teami.Video }}">YouTube link</a><br>
       <!-- Youtube link embedding: 2 types of links; short or long. assume that last 11 chars are the video id and use that to create an embed link -->
-  {% if teami.Video  | slice: 19, 3 == "com" %} <!-- long link https://www.youtube.com/watch?v=5E2rEKQ4Rmg -->
+  {% if teami.Video.size  > 66 %} <!-- long link https://www.youtube.com/watch?v=5E2rEKQ4Rmg -->
     long link
     {% assign vlink = teami.Video | | slice: 32, 11%}
   {% else %} <!-- short link https://youtu.be/5OoDQ50bzUk 17,11-->
@@ -44,12 +44,7 @@ Project information:
 {% endif %}
     {{ vlink }}
        <iframe width="420" height="315" src="https://www.youtube.com/embed/{{ vlink }}"  frameborder="0" allowfullscreen></iframe><br>
-{% assign beatles = teami.Video | split: "/" %}
-{% for member in beatles %}
-  {{ member }}
-{% endif %}
-  
-{% endfor %}
+
   
    </ul>
 {% endfor %}
