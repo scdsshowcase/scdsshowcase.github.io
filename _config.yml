@@ -36,6 +36,8 @@ github_username:  scdsshowcase
 # ME: change theme
 theme: minima #default
 # theme: minimal-mistakes-jekyll
+minima:
+  skin: dark
 
 plugins:
   - jekyll-feed
