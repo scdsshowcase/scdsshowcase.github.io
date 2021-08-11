@@ -12,7 +12,7 @@ Timestamp,Email,Title,Members,Abstract,Keywords,Group,PosterName,Video,PosterLin
  be retrieved for upcoming tee times. The backend consists of an ASP.NET Entity Framework
  Core system that helps users manage the golf storage room data as well as retrieve tee sheet
  information. Application data is stored and retrieved from a cloud-based Microsoft SQL Server
- database.","Web application, Azure, User Interface, React JS, SQL",Ergezer_01,Ergezer_01_Poster.pdf,https://youtu.be/5OoDQ50bzUk?list=PLsqlXhATSJkp5CmZDWTNk9t0ElRE17,https://drive.google.com/uc?id=1EaLJKyy3YoeM4QXYlmelszWQW5vxq0Tu&export=download
+ database.","Web application, Azure, User Interface, React JS, SQL",Ergezer_01,Ergezer_01_Poster.pdf,https://www.youtube.com/watch?v=3HdN1tcWdsI,https://drive.google.com/uc?id=1EaLJKyy3YoeM4QXYlmelszWQW5vxq0Tu&export=download
 8/6/21 23:51,ergezerm@wit.edu,Shepherd,"Jordan Blackadar, Ryan Lawton","The Shepherd software package was created by a team of two undergraduate Computer Science
  students as a senior design project at Wentworth Institute of Technology. Shepherd aims to simplify the
  process of distributed resource monitoring in a transparent and simple manner. Shepherd includes
